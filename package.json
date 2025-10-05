@@ -1,0 +1,17 @@
+{
+  "name": "eftaios-basic-web",
+  "version": "1.0.0",
+  "description": "Static hex board for Escape from the Aliens in Outer Space — Basic Web Edition.",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "node --check src/main.js"
+  },
+  "keywords": [
+    "escape-from-the-aliens",
+    "board-game",
+    "hex-grid"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
