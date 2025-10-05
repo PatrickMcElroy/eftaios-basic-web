@@ -1,7 +1,12 @@
 export const MAX_TURNS = 40;
 
 export function maxMoveFor(player) {
-  if (player.role === "human") return 1;
+  if (player.role === "human") {
+    return 1;
+  }
+  if (player.character?.id === "fast" && !player.abilityState?.firstMoveComplete) {
+    return 3;
+  }
   return player.feedBonus ? 3 : 2;
 }
 
