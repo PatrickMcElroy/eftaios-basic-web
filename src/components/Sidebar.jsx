@@ -16,7 +16,7 @@ export default function Sidebar({ engine }) {
           <div key={index}>{message}</div>
         ))}
       </div>
-      <div className="text-xs text-zinc-500">Basic rules only. Add Items/Abilities, respawn-on-death-as-Alien, and proper deck composition next.</div>
+      <div className="text-xs text-zinc-500">Abilities active. Items and respawn rules are upcoming in future builds.</div>
     </div>
   );
 }

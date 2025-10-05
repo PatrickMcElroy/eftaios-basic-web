@@ -28,7 +28,7 @@ export default function Lobby({ engine }) {
           className="px-3 py-1 rounded bg-emerald-700 hover:bg-emerald-600"
           onClick={() => addPlayers(names.filter(Boolean))}
         >
-          Deal Roles & Start
+          Deal Characters & Start
         </button>
         <button
           className="px-3 py-1 rounded bg-zinc-800 hover:bg-zinc-700"
