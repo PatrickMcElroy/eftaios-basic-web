@@ -1,100 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escape from the Aliens in Outer Space — Basic Web Edition</title>
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>EFTAIOS – Basic Web Edition</title>
   </head>
-  <body>
-    <div class="app-shell">
-      <header class="app-header">
-        <div class="title-group">
-          <h1 class="app-title">Escape from the Aliens in Outer Space</h1>
-          <span class="app-subtitle">Basic Web Edition</span>
-        </div>
-        <div class="status-pill" data-active-player></div>
-      </header>
-
-      <main class="app-main">
-        <section class="board-panel">
-          <div class="board-toolbar">
-            <div class="toolbar-section">
-              <label class="toolbar-label">Map</label>
-              <select class="toolbar-select" data-map-select>
-                <option value="basic">Ship Map (basic)</option>
-              </select>
-            </div>
-            <div class="toolbar-section">
-              <label class="toolbar-label">Hover</label>
-              <span class="toolbar-value" data-hover-info>—</span>
-            </div>
-          </div>
-
-          <div class="board-wrapper">
-            <svg class="board-grid" data-board role="img" aria-label="Ship map"></svg>
-            <div class="board-legend">
-              <div class="legend-group">
-                <h2 class="legend-title">Legend</h2>
-                <div class="legend-items" data-legend></div>
-              </div>
-              <div class="legend-group">
-                <h2 class="legend-title">Escape Pods</h2>
-                <div class="legend-items" data-escape-pods></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <aside class="info-panel">
-          <section class="info-card">
-            <header class="info-card__header">
-              <h2 class="info-card__title">Active Player View</h2>
-              <div class="info-card__actions">
-                <button class="info-button" data-action="attack">Attack here</button>
-                <button class="info-button info-button--primary" data-action="draw">Draw sector card</button>
-              </div>
-            </header>
-            <div class="info-card__body" data-active-summary>
-              Select a tile to inspect adjacency and occupants.
-            </div>
-          </section>
-
-          <section class="info-card">
-            <header class="info-card__header">
-              <h2 class="info-card__title">Crew Roster</h2>
-            </header>
-            <div class="info-card__body">
-              <ul class="roster-list" data-roster></ul>
-            </div>
-          </section>
-        </aside>
-      </main>
-    </div>
-
-    <template id="legend-item-template">
-      <div class="legend-item">
-        <span class="legend-swatch"></span>
-        <span class="legend-label"></span>
-      </div>
-    </template>
-
-    <template id="escape-pod-template">
-      <div class="pod-item">
-        <div class="pod-icon">🛸</div>
-        <div class="pod-content">
-          <span class="pod-label"></span>
-          <span class="pod-status"></span>
-        </div>
-      </div>
-    </template>
-
-    <script type="module" src="src/main.js"></script>
+  <body class="bg-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
