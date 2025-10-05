@@ -4,6 +4,10 @@ This repository now ships a lightweight static build (plain HTML, CSS, and JavaS
 **Basic rules** web board. It is tuned for quickly iterating on the visual layout of the ship map
 without any external toolchain or npm dependencies.
 
+The latest refresh focuses on a neutral, print-inspired look so the SVG hexes mirror the physical
+board’s white adjacency map. Every tile now has crisp edging, hover feedback, and clean crew tokens
+that make it obvious which hexes connect.
+
 ## Quick start
 
 Open `index.html` directly in a browser, or serve the folder with any static HTTP server (for
@@ -12,6 +16,7 @@ example, `python3 -m http.server`).
 ## What’s included
 - No build step — the ship map is rendered via modern browser APIs (ES modules + SVG).
 - Responsive, hex-based ship map that matches the adjacency of the physical board.
+- Bright, white-on-slate styling that mirrors the tabletop reference sheet for easier adjacency reads.
 - All assets are contained in `index.html`, `styles/global.css`, and the small scripts in `src/`.
 
 ## Notes
